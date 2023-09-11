@@ -1,28 +1,48 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using ProEventos.API.Models;
 
 namespace ProEventos.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class EventoController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+	public IEnumerable<Evento> _evento = new Evento[]
+	{
+		new Evento()
+		{
+				EventoId = 1,
+				Tema = "Curso Angular e .NET 5",
+				Lote = "1º Lote",
+				QtdPessoas = 15,
+				Local = "Florianópolis",
+				DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy"),
+				ImagemURL = "imagem.jpg"
+		},
+		new Evento()
+		{
+				EventoId = 2,
+				Tema = "Curso Angular e .NET 5",
+				Lote = "2º Lote",
+				Local = "Rio de Janeiro",
+				QtdPessoas = 15,
+				DataEvento = DateTime.Now.AddDays(2).ToString("dd/MM/yyyy"),
+				ImagemURL = "imagem.jpg"
+		}
+	};
 
-    private readonly ILogger<EventoController> _logger;
+	[HttpGet]
+	public IEnumerable<Evento> Get()
+	{
+		return _evento;
+	}
 
-    public EventoController(ILogger<EventoController> logger)
-    {
-        _logger = logger;
-    }
-
-    [HttpGet]
-    public string Get()
-    {
-        return "Exemplo de Get";
-    }
+	[HttpGet("{id}")]
+	public IEnumerable<Evento> GetById(int id)
+	{
+		return _evento.Where(evento => evento.EventoId == id);
+	}
 
 	[HttpPost]
 	public string Post()
