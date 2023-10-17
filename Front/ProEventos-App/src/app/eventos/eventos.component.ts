@@ -21,8 +21,8 @@ export class EventosComponent implements OnInit {
   }
 
   public set filtroLista(value: string) {
-    this.filtroLista = value;
-    this.eventosFiltrados = this.filtroLista ? this.filtrarEventos(this.filtroLista) : this.eventos;
+    this._filtroLista = value;
+    this.eventosFiltrados = this._filtroLista ? this.filtrarEventos(this._filtroLista) : this.eventos;
   }
 
   filtrarEventos(filtrarPor: string): any {
