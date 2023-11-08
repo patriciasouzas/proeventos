@@ -73,3 +73,9 @@ C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.API\bi
 C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.API\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.API\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.Api\bin\Debug\net6.0\ProEventos.Application.dll
+C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.Api\bin\Debug\net6.0\ProEventos.Domain.dll
+C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.Api\bin\Debug\net6.0\ProEventos.Persistence.dll
+C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.Api\bin\Debug\net6.0\ProEventos.Application.pdb
+C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.Api\bin\Debug\net6.0\ProEventos.Domain.pdb
+C:\Users\Patricia Souza\Documents\projetos\proeventos\Back\src\ProEventos.Api\bin\Debug\net6.0\ProEventos.Persistence.pdb
