@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProEventos.Domain.Models
+namespace ProEventos.Domain
 {
     public class Evento
     {
